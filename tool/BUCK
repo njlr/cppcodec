@@ -1,0 +1,12 @@
+cxx_binary(
+  name = 'helloworld',
+  srcs = [
+    'helloworld.cpp',
+  ],
+  compiler_flags = [
+    '-std=c++14',
+  ],
+  deps = [
+    '//:cppcodec',
+  ],
+)
